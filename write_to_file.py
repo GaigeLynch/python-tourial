@@ -9,10 +9,12 @@ vocabulary_list= [line[0] for line in line_split]
 
 vocabulary_dict = {x: i for i, x in enumerate(vocabulary_list)}
 
+# write list to file
 # with open("/home/ubuntu/Downloads/dict.txt", 'w') as f:
 # 	for item in vocabulary_list:
 # 		f.write(item + '\n')
 
+# write dict to file
 with open("/home/ubuntu/Downloads/dict_file.txt", 'w') as f:
 	f.writelines('{} {}\n'.format(k,v) for k, v in vocabulary_dict.items())
 
